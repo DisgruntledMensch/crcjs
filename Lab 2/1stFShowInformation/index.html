@@ -6,13 +6,22 @@
 
 	<script type="text/javascript">
 		let firstName = "Justin";
+		let lastName = "Trudeau";
+		let name = firstName + " " + lastName;
+		let email = "jt@mcrmail.ca"
 
 		function setValues(){
 			document.getElementById("idTxtFirstName").value = firstName;
+			document.getElementById("idTxtLastName").value = lastName;
+			document.getElementById("idTxtName").value = name;
+			document.getElementById("idTxtEmail").value = email;
 		}
 
 		function clearFields(){
 			document.getElementById("idTxtFirstName").value = "";
+			document.getElementById("idTxtLastName").value = "";
+			document.getElementById("idTxtName").value = "";
+			document.getElementById("idTxtEmail").value = ""; 
 		}
 	</script>	
 </head>
