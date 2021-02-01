@@ -14,6 +14,32 @@
          Exercise 2
       </h1>
    </header>
+   <script type="text/javascript">
+		let street = "1 Main St";
+		let city = "Sicilia";
+		let state = "MA";
+      let zip = "02103"
+
+      let street2 = "15 Columbine ln";
+		let city2 = "Crab City";
+		let state2 = "MA";
+      let zip2 = "02104"
+      
+
+		function setValues1(){
+			document.getElementById("streetinput").value = street;
+			document.getElementById("cityinput").value = city;
+			document.getElementById("stateinput").value = state;
+			document.getElementById("zipinput").value = zip;
+      }
+      function setValues2(){
+			document.getElementById("streetinput").value = street2;
+			document.getElementById("cityinput").value = city2;
+			document.getElementById("stateinput").value = state2;
+			document.getElementById("zipinput").value = zip2;
+		}
+	
+	</script>	
 
    <article>
       <h2>Shipping Address</h2>
@@ -24,7 +50,7 @@
                <span>Home</span><br/>
                1 Main St.<br />
                Sicilia, MA 02103
-               <input type="radio" id="homeoption" name="shippingaddr">
+               <input type="radio" id="homeoption" name="shippingaddr"onclick="setValues1();"/>
 					  
 			
             </label>
@@ -32,7 +58,7 @@
                <span>Work</span><br/>
                15 Columbine Ln.<br />
                Crab City, MA 02104
-               <input type="radio" id="workoption" name="shippingaddr" />
+               <input type="radio" id="workoption" name="shippingaddr" onclick="setValues2();"/>
             </label>
          </fieldset>
           <fieldset id="contactinfo">
